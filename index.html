@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/bugericon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        .btn {
+            @apply rounded-xl text-sm px-3 py-1 transition-all  hover:bg-primary hover:text-white  tracking-wider uppercase;
+          }
+
+          .card{
+            @apply bg-white rounded overflow-hidden shadow-md relative h-auto  hover:shadow-lg;
+          }
+      </style>
+    <!-- custom css tailwind -->
+
+    <title>Food Recipe</title>
+</head>
+
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-3">
+        <!-- hero container-->
+        <div class="md:col-span-1 md:justify-end ">
+            <nav>
+                <div class="flex justify-between md:justify-end items-center">
+                    <h1 class="font-bold text-lg p-4 uppercase border-b sm: border-gray-100">
+                        <a href="/">Foodie</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer sm:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+                </div>
+                <ul class="text-sm hidden md:block " id="menu">
+                    <li class="font-bold  py-1 mt-8">
+                        <a href="#" class="flex justify-end border-r-4 border-primary">
+                            <span class=" font-body ">Home</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="flex justify-end border-r-4 border-transparent">
+                            <span>About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="flex justify-end border-r-4 border-transparent">
+                            <span>Contact</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <!--end of nav-->
+
+        <main class="px-24 py-6 bg-gray-100 md:col-span-2">
+            <div class="  flex justify-center md:justify-end  ">
+                <a href="#" class=" text-primary btn lg:border-2 hover:border-transparent border-orange-300 ">Log In</a>
+                <a href="#" class=" text-primary btn lg:border-2 hover:border-transparent border-orange-300 ml-2 ">Sign
+                    Up</a>
+            </div>
+
+
+            <header class="mt-8">
+                <h3 class="text-gray-700 text-6xl font-semibold select-none group">Recipes</h3>
+                <h3 class="text-gray-700 text-2xl font-bold select-none">For Geeks</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2   border-b border-gray-200 select-none ">Latest Recipes</h4>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                    <!-- card 1 -->
+                    <div class="card group">
+                        <img src="./images/Chilli-Cheese-Samosas-8.jpg" alt="Chilli cheese samosa"
+                            class="w-full h-32 sm:h-64 object-cover scale-1 transition-all ease-in-out duration-500 group-hover:scale-105  ">
+
+
+                        <div class="m-4 ">
+                            <span class="font-bold decoration-slice">Chilli Cheese Samosa
+                            </span>
+                            <!-- stars -->
+                            <div class="flex my-2  items-center justify-begin w-4">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starborder.png" alt="." class="  h-3 w-3">
+                            </div>
+                            <!-- stars end -->
+
+                            <p class="text-xs">These stuffed savory pastries are a traditional Indian favorite.....</p>
+                            <span class="block text-gray-500 text-sm">Recipe by <strong class="text-gray-700 underline decoration-red-800 mt-1 ">Juel</strong> </span>
+                        </div>
+                        <div
+                            class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
+                            <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>18 mins</span>
+                        </div>
+                        <span
+                            class=" max-w-0 bg-red-700 transition-all duration-500 ease-in-out group-hover:max-w-full h-1 block"></span>
+                    </div>
+                    <!-- card 1 end -->
+                    <!-- card 2 -->
+                    <div class="card group">
+                        <img src="./images/Classic waffles.jpg" alt="Classic waffles"
+                            class="w-full h-32 sm:h-64 object-cover scale-1 transition-all ease-in-out duration-500 group-hover:scale-105 ">
+                        <div class="m-4">
+                            <span class="font-bold">Classic Waffles</span>
+
+                            <!-- stars -->
+                            <div class="flex my-2  items-center justify-begin w-4">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starborder.png" alt="." class="  h-3 w-3">
+                                <img src="./images/star/starborder.png" alt="." class="  h-3 w-3">
+                            </div>
+                            <!-- stars end -->
+
+                            <p class="text-xs">A Beautiful lovely, crispy waffle perfect for the morning...</p>
+
+                            <span class="block text-gray-500 text-sm">Recipe by <strong class="text-gray-700 underline decoration-red-800 mt-1">Mark</strong> </span>
+                        </div>
+                        <div
+                            class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
+                            <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>10 mins</span>
+                        </div>
+                        <span
+                            class=" max-w-0 bg-red-700 transition-all duration-500 ease-in-out group-hover:max-w-full h-1 block"></span>
+                    </div>
+                    <!-- card 2 end -->
+                    <!-- card 3 -->
+                    <div class="card flex flex-col group ">
+                        <img src="./images/Spicy Grilled Cheese Sandwich.jpg" alt="Spicy Grilled Cheese Sandwich"
+                            class="w-full h-32 sm:h-64 object-cover  scale-1 transition-all ease-in-out duration-500 group-hover:scale-105  ">
+                        <div class="m-4">
+                            <span class="font-bold">Spicy Grilled Cheese Sandwich</span>
+
+                            <!-- stars -->
+                            <div class="flex my-2  items-center justify-begin w-4">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starfill.png" alt=".">
+                                <img src="./images/star/starborder.png" alt="." class="  h-3 w-3">
+                                <img src="./images/star/starborder.png" alt="." class="  h-3 w-3">
+                            </div>
+                            <!-- stars end -->
+
+                            <p class="text-xs">Grilled cheese with onions, tomatoes and jalapenos-- tastier than the original!</p>
+
+                            <span class="block text-gray-500 text-sm">Recipe by <strong class="text-gray-700 underline decoration-red-800">Darla</strong> </span>
+                        </div>
+                        <div
+                            class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
+                            <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>25 mins</span>
+                        </div>
+                        <span class=" max-w-0 bg-red-700 transition-all duration-500 ease-in-out group-hover:max-w-full h-1 block"></span>
+                    </div>
+                    <!-- card 3 end -->
+                </div>
+
+                <h2 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h2>
+                <div class="mt-12">
+                    <!--cards go here-->
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="btn bg-gray-600 text-gray-200 border-none"> Load more</div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
