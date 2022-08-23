@@ -26,3 +26,5 @@ burger.addEventListener('click', function() {
     menu.classList.add('hidden');
   }
 })
+
+$('#image').hide().delay(800).fadeTo(600, 1);
