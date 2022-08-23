@@ -25,10 +25,11 @@
 </head>
 
 <body class="text-gray-600 font-body">
-    <div class="grid md:grid-cols-3">
+    <div class="grid md:grid-cols-3 ">
         <!-- hero container-->
-      
-        <div class="md:col-span-1 md:justify-end  bg-cover" style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255,255,255,0)), url('./images/main-background.jpg');" >
+
+        <div class="bg-fixed md:col-span-1 md:justify-end  bg-cover"
+            style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255,255,255,0)), url('./images/main-background.jpg');">
             <nav>
                 <div class="flex justify-between md:justify-end items-center">
                     <h1 class="font-bold text-lg p-4 uppercase border-b sm: border-gray-100">
@@ -114,7 +115,8 @@
                             <!-- stars end -->
 
                             <p class="text-xs">These stuffed savory pastries are a traditional Indian favorite.....</p>
-                            <span class="block text-gray-500 text-sm ">Recipe by <strong class="text-gray-700 underline decoration-red-800 mt-1 ">Juel</strong> </span>
+                            <span class="block text-gray-500 text-sm ">Recipe by <strong
+                                    class="text-gray-700 underline decoration-red-800 mt-1 ">Juel</strong> </span>
                         </div>
                         <div
                             class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
@@ -148,7 +150,8 @@
 
                             <p class="text-xs">A Beautiful lovely, crispy waffle perfect for the morning...</p>
 
-                            <span class="block text-gray-500 text-sm">Recipe by <strong class="text-gray-700 underline decoration-red-800 mt-1">Mark</strong> </span>
+                            <span class="block text-gray-500 text-sm">Recipe by <strong
+                                    class="text-gray-700 underline decoration-red-800 mt-1">Mark</strong> </span>
                         </div>
                         <div
                             class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
@@ -180,9 +183,11 @@
                             </div>
                             <!-- stars end -->
 
-                            <p class="text-xs">Grilled cheese with onions, tomatoes and jalapenos-- tastier than the original!</p>
+                            <p class="text-xs">Grilled cheese with onions, tomatoes and jalapenos-- tastier than the
+                                original!</p>
 
-                            <span class="block text-gray-500 text-sm">Recipe by <strong class="text-gray-700 underline decoration-red-800">Darla</strong> </span>
+                            <span class="block text-gray-500 text-sm">Recipe by <strong
+                                    class="text-gray-700 underline decoration-red-800">Darla</strong> </span>
                         </div>
                         <div
                             class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
@@ -202,7 +207,7 @@
                             class="w-full h-32 sm:h-64 object-cover  scale-1 transition-all ease-in-out duration-500 group-hover:scale-105  ">
                         <div class="m-4 bg-white ">
                             <span class="font-bold ">Basic Chicken Salad</span>
-                    
+
                             <!-- stars -->
                             <div class="flex my-2  items-center justify-begin w-4">
                                 <img src="./images/star/starfill.png" alt=".">
@@ -212,17 +217,19 @@
                                 <img src="./images/star/starborder.png" alt="." class="  h-3 w-3">
                             </div>
                             <!-- stars end -->
-                    
-                            <p class="text-xs">Got leftover chicken hanging around in your fridge? If so, chop it up ...</p>
-                    
+
+                            <p class="text-xs">Got leftover chicken hanging around in your fridge? If so, chop it up ...
+                            </p>
+
                             <span class="block text-gray-500 text-sm">Recipe by <strong
                                     class="text-gray-700 underline decoration-red-800">Tom</strong> </span>
                         </div>
                         <div
                             class="bg-secondary-100 text-secondary-200 rounded-full px-2 py-1 font-bold uppercase absolute left-0 top-0 ml-2 mt-2 text-sm">
-                            <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <span>15 mins</span>
                         </div>
@@ -232,15 +239,97 @@
                 </div>
 
                 <h2 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular</h2>
-                <div class="mt-12">
+                <div class="my-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <!--cards go here-->
-                    
+
+                    <!-- card 1 -->
+                    <div class="rounded overflow-hidden  flex shadow-lg bg-white h-24 md:h-32">
+                        <img src="./images/popular/popular_1.jpg" alt="popular_1" class=" h-24 md:h-full object-cover">
+                        <div class="m-4">
+                            <p class="text-sm  font-bold  ">7 Quick and Easy Chicken Dinners Ready
+                                in 20 Minutes or Less</p>
+                            <p class="text-xs mt-2 hidden sm:block">Satisfying chicken dinners can be on the table in a
+                                speedy 20 minutes thanks to using the right cuts of chicken and some... <strong
+                                    class="underline">read more</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 1 -->
+
+                    <!-- card 2  start-->
+                    <div class="rounded overflow-hidden  flex shadow-lg bg-white h-24 md:h-32">
+                        <img src="./images/popular/popular_2.jpg" alt="popular_1"
+                            class=" object-cover h-24 w-24 md:h-32 md:w-32 ">
+                        <div class="m-4">
+                            <p class="text-sm  font-bold  ">Peach Pie Recipes</p>
+                            <p class="text-xs mt-2 hidden sm:block">Looking for a new peach pie recipe? Browse more than
+                                55 ways to bake peach pies using fresh or frozen peaches... <strong
+                                    class="underline">read
+                                    more</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 2 end -->
+
+                    <!-- card 3  start-->
+                    <div class="rounded overflow-hidden  flex shadow-lg bg-white h-24 md:h-32">
+                        <img src="./images/popular/popular_3.jpg" alt="popular_1"
+                            class=" object-cover h-24 w-24 md:h-32 md:w-32 ">
+                        <div class="m-4">
+                            <p class="text-sm  font-bold  ">Hatch Chile Salsa</p>
+                            <p class="text-xs mt-2 hidden sm:block">You'll think you're in Mexico when you eat this
+                                easy, quick, no-cook salsa. Great on tortilla chips... <strong class="underline">read
+                                    more</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 3 end -->
                 </div>
 
                 <div class="flex justify-center">
                     <div class="btn bg-gray-600 text-gray-200 border-none"> Load more</div>
                 </div>
             </div>
+
+            <div class="my-10">
+                <h1 class="text-6xl font-semibold border-b border-gray-200 pb-2">About</h1>
+                <div class="mt-8">
+                    <div class=" overflow-hidden">
+                        <img class="object-cover scale-1 transition-all duration-500 ease-in-out hover:scale-105"
+                            src="./images/about_1.jpg" alt="about_1">
+                    </div>
+                    <h4 class="mt-10"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse officia
+                        non autem
+                        aliquid. Deleniti aliquam et minus at repudiandae porro atque. Eaque illo autem eveniet
+                        provident ipsa repellat beatae, sit, eos, ea facilis enim corrupti officia commodi iure. Culpa
+                        similique natus quos voluptates adipisci velit repudiandae odio perspiciatis quis, ab quo veniam
+                        modi! Sunt nemo, minima quisquam dolore tenetur eveniet et dolor eius ipsam. Porro in aliquam
+                        deserunt saepe magni quos et quae! Natus quasi aliquid labore beatae ullam vero, nisi
+                        reprehenderit cupiditate? Nihil sed at voluptatibus voluptas, voluptates eaque commodi id,
+                        blanditiis in esse maiores. Iure tempore maiores dolor. Nemo, eligendi temporibus optio totam
+                        consequuntur quod nesciunt maxime tempore, earum cumque est deserunt voluptatibus. Qui quae
+                        repellat odio perspiciatis quas! Tempora porro voluptates temporibus eligendi praesentium, ipsam
+                        similique ad velit. Iure amet beatae quisquam consectetur fugit accusamus incidunt qui quis
+                        saepe? Nam expedita fugiat accusantium corrupti dolore iusto dolorum voluptatem nostrum animi.
+                        Voluptatum ratione tempora accusamus, at hic sapiente reiciendis. Dolore accusamus eaque vel
+                        voluptatem ipsam itaque impedit tempora, ea quo cum quod eligendi illo! Molestias voluptas odio
+                        impedit magnam nobis, natus dolores? Nobis nemo eos, culpa quis nesciunt doloremque temporibus
+                        quas maiores veritatis reiciendis possimus reprehenderit accusantium</h4>
+                </div>
+            </div>
+
+            <!-- Contact us -->
+
+            <div>
+                <h1 class="text-6xl font-semibold border-b border-gray-200 pb-2">Contact us</h1>
+                <div class=" m ">
+                    <div>
+                        <label for="name" class="font-bold block my-2">Name</label>
+                        <input type="text" class="block w-full h-8 border-2 border-gray-400">
+                    </div>
+                </div>
+            </div>
+
 
         </main>
 
